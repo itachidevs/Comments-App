@@ -1,0 +1,113 @@
+/* Write your CSS here */
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.main-heading {
+  color: #1e293b;
+  font-size: 37px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: left;
+}
+.input-part {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-container {
+  width: 100%;
+  padding: 0px;
+}
+.instruction {
+  color: #475569;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  width: 100%;
+}
+.image {
+  width: 100%;
+}
+.form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+}
+.form input,
+textarea {
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #cbd2d9;
+  border-width: 1px;
+}
+.form button {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: 400;
+  width: 130px;
+  height: 30px;
+  border-radius: 3px;
+  border-width: 0px;
+}
+
+.commenets-count {
+  color: #64748b;
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+.count {
+  padding: 4px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  width: 24px;
+  height: 20px;
+  background-color: #0b69ff;
+  color: #ffffff;
+  margin: 5px;
+}
+.comments-container {
+  border-top: 2px;
+  color: #cbd2d9;
+  border-style: solid;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .main-heading {
+    font-size: 35px;
+  }
+  .input-part {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+  }
+  .form-container {
+    width: 50%;
+  }
+  .image {
+    width: 50%;
+    order: 1;
+  }
+}
